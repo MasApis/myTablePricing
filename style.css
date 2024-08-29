@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 100%;
+    padding: 1em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e8eef1;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #057dcd;
+    margin: 0px 0px 0.5em 0px;
+}
+
+main {
+    /* border: 1px solid black; */
+    /* padding: 1em; */
+    width: 100%;
+    height: 100vh;
+    /* max-width: 95%; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: baseline; */
+    gap: 1em;
+}
+
+main .pricing-plan {
+    background-color: white;
+    /* max-height: 900px; */
+    width: 100%;
+    max-width: 500px;
+    height: 90%;
+    max-height: 700px;
+    /* padding: 1em 0; */
+    border-radius: 1.2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.5s linear;
+}
+
+main .pricing-plan:nth-child(1):hover {
+    transform: translateY(-2.5em);
+}
+
+main .pricing-plan:nth-child(2):hover {
+    transform: translateY(-2.5em);
+}
+
+main .pricing-plan:nth-child(1):hover {
+    transform: translateY(-2.5em);
+}
+
+main .pricing-plan:nth-child(4):hover {
+    transform: translateY(-2.5em);
+}
+
+main .pricing-plan:nth-child(5):hover {
+    transform: translateY(-2.5em);
+}
+
+main .pricing-plan:nth-child(3) {
+    transform: translateY(-2.5em);
+}
+
+.pricing-plan .pricing-header {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 2em;
+    text-align: center;
+    background-color: #057dcd;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.6em 0.6em 0 0;
+}
+
+.pricing-plan .pricing-header-populer {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background-color: #f50538;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 0.6em 0.6em 0 0;
+}
+
+.pricing-header-number {
+    font-size: 2.3em;
+}
+
+.pricing-plan .price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    padding: 0.6em;
+    text-align: center;
+}
+
+.pricing-plan .pricing-feature {
+    margin: 10px 10px;
+}
+
+.pricing-feature .pricing-feature-item {
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.pricing-feature .pricing-feature-item:hover {
+    font-weight: 600;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button-pricing {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.5em;
+    /* margin: 1em 0px 1em 0px; */
+    margin: 10px 0px 0px 0px;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    transition: all 0.5s linear;
+}
+
+.button-pricing:hover {
+    color: white;
+    background-color: #057dcd;
+    border: none;
+}
+
+@media (max-width: 980px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7em;
+    }
+
+    .pricing-plan {
+        width: 70%;
+        max-width: 400px;
+    }
+
+    main .pricing-plan:nth-child(3) {
+        transform: translateY(0);
+    }
+
+    main .pricing-plan:nth-child(1):hover {
+        transform: translateY(0);
+    }
+    
+    main .pricing-plan:nth-child(2):hover {
+        transform: translateY(0);
+    }
+    
+    main .pricing-plan:nth-child(4):hover {
+        transform: translateY(0);
+    }
+    
+    main .pricing-plan:nth-child(5):hover {
+        transform: translateY(0);
+    }
+
+    .button-pricing {
+        background-color: #057dcd;
+        color: white;
+        /* margin: 0 0 1.3em 0; */
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 22px;
+        /* margin: 0px auto; */
+    }
+}
+
