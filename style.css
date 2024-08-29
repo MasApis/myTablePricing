@@ -162,7 +162,7 @@ main .pricing-plan:nth-child(3) {
         align-content: center;
         justify-content: center;
         align-items: center;
-        gap: 0.7em;
+        gap: 0.9em;
     }
 
     .pricing-plan {
@@ -199,7 +199,7 @@ main .pricing-plan:nth-child(3) {
 
 @media (max-width: 500px) {
     header h1 {
-        font-size: 22px;
+        font-size: 20px;
         /* margin: 0px auto; */
     }
 }
